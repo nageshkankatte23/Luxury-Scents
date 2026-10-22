@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luxury Scents Perfume Shop</title>
+
+    <!-- START: BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- END: BOOTSTRAP CSS -->
+
+    <!-- START: BOOTSTRAP ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- END: BOOTSTRAP ICONS -->
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .hero {
+            background-color: #212529;
+            color: white;
+        }
+
+        .hero img {
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .product-img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card {
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+
+</head>
+
+
+<body class="bg-light">
+
+     <!-- START: NAVBAR -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+
+            <!-- START: BRAND LOGO -->
+
+
+            <a class="navbar-brand fw-bold fs-3" href="#home">
+                <i class="bi bi-droplet-half text-warning"></i>
+                Luxury Scents
+            </a>
+
+
+            <!-- END: BRAND LOGO -->
+
+            <!-- START: MOBILE MENU BUTTON -->
+
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <!-- END: MOBILE MENU BUTTON -->
+
+            <!-- START: NAVIGATION LINKS -->
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#men">Men</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#women">Women</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+
+                <!-- START: CART BUTTON -->
+
+                <button class="btn btn-warning ms-lg-3" onclick="showCart()">
+                    <i class="bi bi-bag"></i> Cart
+                    <span id="cartCount" class="badge bg-dark">0</span>
+                </button>
+
+                <!-- END: CART BUTTON -->
+
+            </div>
+
+            <!-- END: NAVIGATION LINKS -->
+
+        </div>
+    </nav>
+
+
+     <!-- END: NAVBAR  -->
+
+
+     <!-- START: HOME / HERO SECTION  -->
+
+
+    <section id="home" class="hero py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+
+                <!-- START: HERO TEXT -->
+                <div class="col-lg-6">
+                    <p class="text-warning fw-bold">DISCOVER YOUR SIGNATURE SCENT</p>
+
+                    <h1 class="display-4 fw-bold">
+                        Luxury Fragrances for Every Moment
+                    </h1>
+
+                    <p class="lead">
+                        Discover premium perfumes for men and women.
+                    </p>
+
+                    <a href="#men" class="btn btn-warning btn-lg">Shop Men</a>
+                    <a href="#women" class="btn btn-outline-light btn-lg">Shop Women</a>
+                </div>
+
+
+                <!-- END: HERO TEXT -->
+
+                <!-- START: HERO IMAGE -->
+
+
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=1000&q=80"
+                        class="img-fluid rounded-4 w-100" alt="Perfume bottles">
+                </div>
+
+                <!-- END: HERO IMAGE -->
+
+            </div>
+        </div>
+    </section>
+
+    
+     <!-- END: HOME / HERO SECTION  -->
+
+
+    <!-- START: FEATURES SECTION  -->
+    <section class="container py-5">
+        <h2 class="text-center fw-bold mb-4">Why Choose Luxury Scents?</h2>
+
+        <div class="row g-4 text-center">
+
+            <!-- START: PREMIUM QUALITY -->
+            <div class="col-md-4">
+                <div class="bg-white shadow-sm rounded-4 p-4 h-100">
+                    <i class="bi bi-award fs-1 text-warning"></i>
+                    <h5 class="fw-bold mt-3">Premium Quality</h5>
+                    <p>Elegant fragrances for every occasion.</p>
+                </div>
+            </div>
+            <!-- END: PREMIUM QUALITY -->
+
+            <!-- START: FAST DELIVERY -->
+            <div class="col-md-4">
+                <div class="bg-white shadow-sm rounded-4 p-4 h-100">
+                    <i class="bi bi-truck fs-1 text-warning"></i>
+                    <h5 class="fw-bold mt-3">Fast Delivery</h5>
+                    <p>Shop your favourite perfumes online.</p>
+                </div>
+            </div>
+            <!-- END: FAST DELIVERY -->
+
+            <!-- START: PERFECT GIFTS -->
+            <div class="col-md-4">
+                <div class="bg-white shadow-sm rounded-4 p-4 h-100">
+                    <i class="bi bi-gift fs-1 text-warning"></i>
+                    <h5 class="fw-bold mt-3">Perfect Gifts</h5>
+                    <p>Find beautiful gifts for special people.</p>
+                </div>
+            </div>
+            <!-- END: PERFECT GIFTS -->
+
+        </div>
+    </section>
+     <!-- END: FEATURES SECTION  -->
+
+
+     <!-- START: MEN'S COLLECTION  -->
+    <section id="men" class="container py-5">
+        <h2 class="text-center fw-bold mb-2">Men's Collection</h2>
+        <p class="text-center text-secondary mb-4">
+            Bold, fresh and confident fragrances.
+        </p>
+
+        <div class="row g-4">
+
+            <!-- START: ROYAL OUD PRODUCT -->
+            <div class="col-sm-6 col-lg-3">
+                <div class="card shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top product-img" alt="Royal Oud">
+
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Royal Oud</h5>
+                        <p class="text-secondary">Woody and luxurious</p>
+                        <h5 class="text-warning">₹1,499</h5>
+
+                        <button class="btn btn-dark w-100"
+                            onclick="addToCart('Royal Oud',1499)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- END: ROYAL OUD PRODUCT -->
+
+            <!-- START: URBAN BLACK PRODUCT -->
+            <div class="col-sm-6 col-lg-3">
+                <div class="card shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top product-img" alt="Urban Black">
+
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Urban Black</h5>
+                        <p class="text-secondary">Deep and sophisticated</p>
+                        <h5 class="text-warning">₹1,199</h5>
+
+                        <button class="btn btn-dark w-100"
+                            onclick="addToCart('Urban Black',1199)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- END: URBAN BLACK PRODUCT -->
+
+            <!-- START: OCEAN BLUE PRODUCT -->
+            <div class="col-sm-6 col-lg-3">
+                <div class="card shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top product-img" alt="Ocean Blue">
+
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Ocean Blue</h5>
+                        <p class="text-secondary">Fresh and energetic</p>
+                        <h5 class="text-warning">₹999</h5>
+
+                        <button class="btn btn-dark w-100"
+                            onclick="addToCart('Ocean Blue',999)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- END: OCEAN BLUE PRODUCT -->
+
+            <!-- START: MIDNIGHT MUSK PRODUCT -->
+            <div class="col-sm-6 col-lg-3">
+                <div class="card shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top product-img" alt="Midnight Musk">
+
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Midnight Musk</h5>
+                        <p class="text-secondary">Warm and memorable</p>
+                        <h5 class="text-warning">₹1,299</h5>
+
+                        <button class="btn btn-dark w-100"
+                            onclick="addToCart('Midnight Musk',1299)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- END: MIDNIGHT MUSK PRODUCT -->
+
+        </div>
+    </section>
+    <!-- END: MEN'S COLLECTION  -->
+
+
+    <footer class="container-fluid bg-dark text-white text-center p-4 mt-5">
+        <h5 class="fw-bold">
+            <i class="bi bi-droplet-half text-warning"></i> Luxury Scents
+        </h5>
+
+        <p>Find your signature fragrance and express your style.</p>
+
+        <p class="mb-0 text-secondary">
+            © 2026 Luxury Scents | Designed with Bootstrap
+        </p>
+    </footer>
+
+
+</body>
+
+</html>
